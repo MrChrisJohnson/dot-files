@@ -29,19 +29,19 @@ ZSH_THEME="gallois"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git osx )
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 alias ez='vim ~/.zshrc'
 alias ev='vim ~/.vimrc'
-export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/games
+export PATH=~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
 alias tms='tmux new -s'
 alias tma='tmux attach -d -t'
 
-export PYTHONSTARTUP=$HOME/.pythonrc.py
-export PYTHONPATH=~/radio-index:~/rec-sys-batch:~/radio:~/luigi:~/rec-sys-online:~/spotify-common
+# export PYTHONSTARTUP=$HOME/.pythonrc.py
+# export PYTHONPATH=~/radio-index:~/rec-sys-batch:~/radio:~/luigi:~/rec-sys-online:~/spotify-common
 
 # make SSH key forwarding work in screen and tmux
 AGENT=/tmp/ssh-agent-screen-${USER}
@@ -50,3 +50,28 @@ test "${SSH_AUTH_SOCK}" && [[ "${SSH_AUTH_SOCK}" != "${AGENT}" ]] && ln -sf "${S
 unset AGENT
 
 unset TMOUT
+
+# beeps are annoying
+setopt NO_BEEP
+
+#convenient editing of configs
+alias ez='vim ~/.zshrc'
+alias ev='vim ~/.vimrc'
+
+#lock screen
+alias lock='/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend'
+
+#convenient ssh
+alias rabi='ssh localhost -p 8021'
+alias hayden='ssh localhost -p 8022'
+alias reva='ssh localhost -p 8028'
+alias choden='ssh localhost -p 8024'
+alias radio-001='ssh localhost -p 8025'
+alias aisling='ssh localhost -p 8027'
+alias jumpa='ssh cjohnson@jump1.ash.spotify.net -A'
+alias jumpl='ssh cjohnson@jump1.lon.spotify.net -A'
+alias jumps='ssh cjohnson@jump1.sto.spotify.net -A'
+
+#git stuff
+alias testgit='ssh -T cjohnson@git.spotify.net'
+

@@ -1,4 +1,4 @@
-set runtimepath=$HOME/vim/runtime/
+"set runtimepath=$HOME/vim/runtime/
 set background=dark
 set nocompatible               " be iMproved
 set mouse=a
