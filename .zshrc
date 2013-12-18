@@ -75,3 +75,10 @@ alias jumps='ssh cjohnson@jump1.sto.spotify.net -A'
 #git stuff
 alias testgit='ssh -T cjohnson@git.spotify.net'
 
+# Skip forward/back a word with opt-arrow
+bindkey '[C' forward-word
+bindkey '[D' backward-word
+
+# Delete word with opt-backspace/opt-delete
+bindkey '[G' backward-kill-word
+bindkey '[H' kill-word
