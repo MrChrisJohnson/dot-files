@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
-"       Amir Salihefendic
-"       http://amix.dk - amix@amix.dk
+"   Chris Johnson
+"   @MrChrisJohnson
 "
 " Version: 
 "       5.0 - 29/05/12 15:43:36
