@@ -39,6 +39,11 @@ alias ev='vim ~/.vimrc'
 export PATH=~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
 alias tms='tmux new -s'
 alias tma='tmux attach -d -t'
+alias tml='tmux list-sessions'
+alias sls='snakebite ls'
+alias sdu='snakebite du -h'
+alias smv='sudo -u spotify-discovery snakebite mv'
+alias srm='sudo -u spotify-discovery snakebite rm -R'
 
 # export PYTHONSTARTUP=$HOME/.pythonrc.py
 # export PYTHONPATH=~/radio-index:~/rec-sys-batch:~/radio:~/luigi:~/rec-sys-online:~/spotify-common
@@ -62,15 +67,10 @@ alias ev='vim ~/.vimrc'
 alias lock='/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend'
 
 #convenient ssh
-alias rabi='ssh localhost -p 8021'
-alias hayden='ssh localhost -p 8022'
-alias reva='ssh localhost -p 8028'
-alias choden='ssh localhost -p 8024'
-alias radio-001='ssh localhost -p 8025'
-alias aisling='ssh localhost -p 8027'
-alias jumpa='ssh cjohnson@jump1.ash.spotify.net -A'
-alias jumpl='ssh cjohnson@jump1.lon.spotify.net -A'
-alias jumps='ssh cjohnson@jump1.sto.spotify.net -A'
+alias lon6a1='ssh lon6-lambdaedgenode-a1.spotify.net -A'
+alias lon6a2='ssh lon6-lambdaedgenode-a2.spotify.net -A'
+alias lon6a3='ssh lon6-lambdaedgenode-a3.spotify.net -A'
+alias pg='psql -U lambda_dashboards lambda_dashboards -h lon3-lambdadashboardsdb-a1.lon3.spotify.net'
 
 #git stuff
 alias testgit='ssh -T cjohnson@git.spotify.net'
